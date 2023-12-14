@@ -78,6 +78,24 @@ class _ViewUserState extends State<ViewUser> {
                   Text(widget.user.description ?? '',
                       style: const TextStyle(fontSize: 16)),
                 ],
+              ),
+              SizedBox(
+                width: 20,
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text('Address',
+                      style: TextStyle(
+                          color: Colors.teal,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600)),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Text(widget.user.address ?? '',
+                      style: const TextStyle(fontSize: 16)),
+                ],
               )
             ],
           ),
